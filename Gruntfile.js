@@ -9,13 +9,13 @@ module.exports = function(grunt) {
       js: {
         files: ['gruntfile.js', 'application.js', 'public/**/*.js'],
         options: {
-          livereload: true
+          livereload: 30000
         }
       },
       html: {
         files: ['public/*.html'],
         options: {
-          livereload: true
+          livereload: 30000
         }
       }
     },
@@ -47,6 +47,7 @@ module.exports = function(grunt) {
       options : {},
       // environment variables - see https://github.com/jsoverson/grunt-env for more information
       local: {
+        FH_PORT: 8002,
         FH_USE_LOCAL_DB: true,
         FH_SERVICE_MAP: function() {
           /*
@@ -56,7 +57,7 @@ module.exports = function(grunt) {
            * or a remote instance.
            */
           var serviceMap = {
-            'SERVICE_GUID_1': 'http://127.0.0.1:8010',
+            'abm3rgxk25dlg65l5wdw2h2o': 'http://localhost:8002',
             'SERVICE_GUID_2': 'https://host-and-path-to-service'
           };
           return JSON.stringify(serviceMap);
@@ -80,11 +81,11 @@ module.exports = function(grunt) {
         app: 'Google Chrome'
       },
       localCloud: {
-        path: 'http://127.0.0.1:8001?url=http://127.0.0.1:8080',
+        path: 'http://127.0.0.1:8002?url=http://127.0.0.1:8001',
         app: 'Google Chrome'
       },
       liveCloud: {
-        path: 'http://127.0.0.1:8001',
+        path: 'http://127.0.0.1:8002',
         app: 'Google Chrome'
       }
     }
