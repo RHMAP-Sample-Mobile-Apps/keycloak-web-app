@@ -12,43 +12,36 @@
     <script src="hello.js"></script>
   </head>
   <body onLoad="onLoad()">
-    <header class="header-footer-bg">
+    <div class="header-footer-bg">
         <div class="center">
             <h3>Keycloak
                 <small>Demo</small>
             </h3>
         </div>
-    </header>
+    </div>
 
-    <div id="count" class="">
+    <div id="count">
         <div id="formWrapper">
             <p id="description">Demonstrates Keycloak authentication and authorization solution.</p>
+            <div class="cloudResponseContainer">
+              <div id="cloudResponse" class="cloudResponse"></div>
+            </div>
             <br />
-            <button id="noAuthentication" type="button" class="say-hello-button">No Auth</button>
+            <button id="noAuthentication" type="button" class="button">No Authentication Required</button>
             <br />
-            <button id="authentication" type="button" class="say-hello-button">Auth</button>
+            <button id="authentication" type="button" class="button">Authentication Required</button>
             <br />
-            <button id="userRole" type="button" class="say-hello-button">User Role</button>
+            <button id="userRole" type="button" class="button">User Role</button>
             <br />
-            <button id="supervisorRole" type="button" class="say-hello-button">Supervisor Role</button>
+            <button id="supervisorRole" type="button" class="button">Supervisor Role</button>
             <br />
-            <button id="adminRole" type="button" class="say-hello-button">Admin Role</button>
-            <br />
-            <div id="cloudResponse" class="cloudResponse"></div>
+            <button id="adminRole" type="button" class="button">Admin Role</button>
             <br />
             <br />
-            <button id="logout" type="button" class="say-hello-button">Log Out</button>
+            <button id="logout" type="button" class="button logout-button">Log Out</button>
             <br />
         </div>
     </div>
-
-    <footer class="header-footer-bg">
-        <div>
-            <small class="right">
-                <!-- v.&nbsp;{{ version }} -->
-            </small>
-        </div>
-    </footer>
 
     <script src="hello.js"></script>
     </body>
