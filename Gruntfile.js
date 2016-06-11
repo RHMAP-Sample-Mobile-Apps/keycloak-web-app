@@ -57,7 +57,6 @@ module.exports = function(grunt) {
            * or a remote instance.
            */
           var serviceMap = {
-            'abm3rgxk25dlg65l5wdw2h2o': 'http://localhost:8002',
             'SERVICE_GUID_2': 'https://host-and-path-to-service'
           };
           return JSON.stringify(serviceMap);
@@ -81,8 +80,8 @@ module.exports = function(grunt) {
         app: 'Google Chrome'
       },
       localCloud: {
-        path: 'http://127.0.0.1:8002?url=http://127.0.0.1:8001',
-        app: 'Google Chrome'
+        path: 'http://127.0.0.1:8002?url=http://127.0.0.1:8003',
+        app: 'Firefox'
       },
       liveCloud: {
         path: 'http://127.0.0.1:8002',

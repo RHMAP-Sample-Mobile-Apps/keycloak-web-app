@@ -13,6 +13,9 @@ body {
     color: #000000;
     background-color: #DCDCDC;
 }
+h3 {
+  padding-top: 15px;
+}
 #app {
     width: inherit;
     height: inherit;
@@ -61,6 +64,7 @@ body {
     position: relative;
     font-size: 1.5em;
 }
+
 .input-group {
     display: block;
 }
@@ -68,8 +72,9 @@ body {
 .cloudResponseContainer {
   position: relative;
   display: block;
-  height: 60px;
+  height: 80px;
   width: 100%;
+  padding-top: 10px;
 }
 .cloudResponse {
     font-size: 1.5em;
@@ -79,9 +84,9 @@ body {
 }
 
 .button {
-    width: 50%;
+    width: 25%;
     height: 2.5em;
-
+    border-radius: 10px;
     float: none;
     display: block;
     margin-left: auto;
