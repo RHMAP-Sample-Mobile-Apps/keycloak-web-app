@@ -11,7 +11,7 @@ body {
     font-size: 1em;
     font-family: Overpass;
     color: #000000;
-    background-color: #DCDCDC;
+    background-image: url("/img/background.jpg");
 }
 h3 {
   padding-top: 15px;
@@ -80,22 +80,23 @@ h3 {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    color: #CC0000;
+    /*color: #CC0000;*/
+    color: #FFFFFF;
 }
 
 .button {
-    width: 25%;
-    height: 2.5em;
+    width: 50%;
+    height: 3em;
     border-radius: 10px;
     float: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 5px 5px 5px;
+    padding: 20px 5px 20px 5px;
     font-size: 1.6em;
     background-color: #4C4C4C;
-    border: 1px solid #216CEC;
-    color: #fff;
+    border: 1px solid #000000;
+    color: #FFFFFF;
 }
 .logout-button {
   background-color:#820000;

@@ -76,7 +76,7 @@ module.exports = function(grunt) {
     },
     open: {
       debug: {
-        path: 'http://127.0.0.1:8001/debug?port=5858',
+        path: 'http://127.0.0.1:8002/debug?port=5858',
         app: 'Google Chrome'
       },
       localCloud: {

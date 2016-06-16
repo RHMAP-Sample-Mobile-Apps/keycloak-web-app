@@ -39,7 +39,7 @@ function onLoad() {
   .success(function() {
     if(keycloakAuth.authenticated) {
       auth = keycloakAuth;
-      alert('Token:' + JSON.stringify(auth, null, 4));
+      console.log('Token:' + JSON.stringify(auth, null, 4));
     }
     else {
       alert('Not authenticated');
