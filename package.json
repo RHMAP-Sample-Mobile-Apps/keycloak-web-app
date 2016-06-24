@@ -17,5 +17,6 @@
     "grunt-open": "~0.2.3",
     "grunt": "^0.4.4"
   },
-  "main" : "application.js"
+  "main" : "application.js",
+  "license": "mit"
 }
